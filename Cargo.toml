@@ -1,5 +1,5 @@
 [package]
-name = "playground"
+name = "rust_playground"
 version = "0.1.0"
 authors = ["Andrew Ni <niandrewdev@gmail.com>"]
 edition = "2018"
@@ -10,9 +10,9 @@ edition = "2018"
 
 
 [lib]
-name = "playground"
+name = "rust_playground"
 path = "src/lib.rs"
 
 [[bin]]
-name = "playground"
+name = "rust_playground"
 path = "src/main.rs"
