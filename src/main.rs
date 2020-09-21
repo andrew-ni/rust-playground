@@ -9,4 +9,5 @@ fn main() {
     s.print();
     s.add_one();
     s.print_all();
+    rust_playground::print(&s);
 }
