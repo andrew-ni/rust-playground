@@ -1,8 +1,7 @@
-
-pub mod traits;
 pub mod structs;
+pub mod traits;
 
-use traits::{Printer, Add1};
+use traits::{Add1, Printer};
 
 pub fn say_hello() {
     println!("{}", String::from("Hi"));
@@ -30,8 +29,9 @@ pub fn print_and_add2<T: Printer + Add1>(a: &mut T, b: &mut T) {
 }
 
 pub fn some_function<T, U>(t: &mut T, u: &mut U) -> i32
-    where T: Add1 + Printer,
-          U: Printer
+where
+    T: Add1 + Printer,
+    U: Printer,
 {
     t.add_one();
     t.print();

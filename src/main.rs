@@ -1,5 +1,7 @@
-
-use rust_playground::{say_hello, structs, traits::{Printer, Add1}};
+use rust_playground::{
+    say_hello, structs,
+    traits::{Add1, Printer},
+};
 
 fn main() {
     println!("Hello");

@@ -1,5 +1,4 @@
-
-use crate::traits::{Printer, Add1};
+use crate::traits::{Add1, Printer};
 
 pub struct MyStruct {
     pub pub_i32: i32,
@@ -19,7 +18,10 @@ impl MyStruct {
     }
 
     pub fn print_all(&self) {
-        println!("{} {} {} {}", self.pub_i32, self.pub_f64, self.pub_string, self.private_i32);
+        println!(
+            "{} {} {} {}",
+            self.pub_i32, self.pub_f64, self.pub_string, self.private_i32
+        );
     }
 }
 
